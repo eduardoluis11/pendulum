@@ -2,7 +2,9 @@
 <html>
 <head>
 
-<!-- This creates a red square that moves left and right indefinitely (source: 
+<!-- Pendulum that moves left and right. Copyright of Eduardo Salinas, 2023.
+
+This creates a red square that moves left and right indefinitely (source: 
 https://www.w3schools.com/cssref/tryit.php?filename=trycss3_animation-direction3). 
 
 I, Eduardo Salinas, generated part of the code of this website using an artificial intelligence called ChatGPT, OpenAI’s large-scale 
