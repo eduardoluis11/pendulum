@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Pendulum that moves left and right. Copyright of Eduardo Salinas, 2023.
+
+This creates a red square that moves left and right indefinitely (source: 
+https://www.w3schools.com/cssref/tryit.php?filename=trycss3_animation-direction3). 
+
+I, Eduardo Salinas, generated part of the code of this website using an artificial intelligence called ChatGPT, OpenAI’s large-scale 
+language-generation model. Upon generating draft language, I reviewed, edited, and revised the language to my own liking, and I take 
+ultimate responsibility for the content of this text. I did not use an app to generate this citation other than ChatGPT's web app. I copied 
+the text from ChatGPT's chat, pasted it on a text editor, and then edited it. Link to ChatGPT: https://chat.openai.com/ .
+ -->
+<style> 
+	div {
+	  width: 100px;
+	  height: 100px;
+	  background: red;
+	  position: relative;
+	  animation: myfirst 5s 1;
+	  animation-direction: reverse;
+	}
+
+	@keyframes myfirst {
+	  0%   {background: red; left: 0px; top: 0px;}
+	  25%  {background: yellow; left: 200px; top: 0px;}
+	  50%  {background: blue; left: 200px; top: 200px;}
+	  75%  {background: green; left: 0px; top: 200px;}
+	  100% {background: red; left: 0px; top: 0px;}
+	}
+
+	.square {
+	  width: 100px;
+	  height: 100px;
+	  background-color: red;
+	  position: relative;
+	  
+	  /* Esto altera la velocidad del pendulo*/
+	  animation: move-square 2s linear infinite;
+	}
+
+	@keyframes move-square {
+	  0% {
+		left: 0;
+	  }
+	  50% {
+		left: calc(100% - 100px);
+	  }
+	  100% {
+		left: 0;
+	  }
+	}
+</style>
+</head>
+<body>
+
+
+
+<h1>EMDR Pendulum</h1>
+
+<p>Move the square left to right and right to left:</p>
+<div class="square"></div>
+
+</body>
+</html>
